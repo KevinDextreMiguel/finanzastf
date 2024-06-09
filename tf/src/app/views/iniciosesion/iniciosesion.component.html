@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div class="container">
+    <form [formGroup]="form"  (Submit)="ingresar()" class="form">
+        <mat-form-field class="componente">
+            <mat-label>name user</mat-label>
+            <input matInput placeholder="name user" formControlName="userName" />
+        </mat-form-field>
+
+
+        <br />
+        <mat-form-field class="componente">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" />
+
+
+            <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+    <br />
+
+    <button  class="buttonaceptar" routerLink="/administrar">Aceptar</button>
+
+    </form>
+</div>
+
+
+<app-footer></app-footer>

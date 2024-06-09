@@ -1,0 +1,28 @@
+.container{
+    padding-top: 15%;
+    padding-left: 40%;
+    /*background-image: url("../../../assets/imagenes/fondo.png");*/
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: aquamarine;
+}
+
+
+
+.buttonaceptar{
+    background-color: blue;
+    color: yellow;
+    border-radius: 15px;
+    width: 15%;
+    height: 7%;
+}
+.buttonaceptar:hover{
+    background-color:aqua;
+    color: black;
+}
+
+
+.componente{
+    width: 30%;
+}
